@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Your Trip!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div>
+      <i class="material-icons">houseboat</i>
+      <span id="titleLogo">Camping</span>
+    </div>
+    <ul class="nav_menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Reserve</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="nav_icons">
+      <li><i class="material-icons">perm_identity</i></li>
+      <li><i class="material-icons">menu</i></li>
+      <li><i class="material-icons">language</i></li>
+    </ul>
+    <!-- First Image Slide -->
+    <div class="imageSlide">
+      <div class="Slides">
+        <input type="radio" name="radioBtn" class="radio1" />
+        <input type="radio" name="radioBtn" class="radio2" />
+        <input type="radio" name="radioBtn" class="radio3" />
+        <span>Discover Your Trip!</span>
+        <span>Not sure where to go? Explore, reserve, camp</span>
+        <button>Reserve</button>
+        <!--button on the slide image to have reserve page-->
+        <!-- Slide Images -->
+        <div class="slideFirst">
+          <img src="image/main1.jpg" alt="" />
+        </div>
+        <div class="main_sldie">
+          <img src="image/main2.jpg" alt="" />
+        </div>
+        <div class="main_slide">
+          <img src="image/main3.jpg" alt="" />
+        </div>
+        <!-- Automatic Navagation -->
+        <div class="autoNav">
+          <div class="autoBtn1"></div>
+          <div class="autoBtn2"></div>
+          <div class="autoBtn3"></div>
+        </div>
+      </div>
+      <!-- Manual Navagation -->
+      <div class="manualNav">
+        <label for="radio1" class="manualBtn"></label>
+        <label for="radio2" class="manualBtn"></label>
+        <label for="radio3" class="manualBtn"></label>
+      </div>
+    </div>
+    <!-- Place To Stay In -->
+    <div class="place_slide">
+      <ul class="place_slideImg">
+        <li><img src="image/tent.jpg" alt="" /></li>
+        <li><img src="image/cottage.jpg" alt="" /></li>
+        <li><img src="image/condo.jpg" alt="" /></li>
+        <li><img src="image/resort.jpg" alt="" /></li>
+        <li><img src="image/hotel.jpg" alt="" /></li>
+        <li><img src="image/caravan.jpg" alt="" /></li>
+      </ul>
+      <div class="place_explanation">
+        <div class="place_title">Place To Stay In</div>
+        <ul class="place_Descriptions">
+          <li>
+            <span class="place_tent"
+              >Roast marshmallows and make s’mores underneath a
+              constellation-filled sky, and wake up to the sounds of birds
+              chirping and trees rustling.</span
+            >
+          </li>
+          <li>
+            <span class="place_cottage"
+              >You’ll be able to get back to basics in a more private atmosphere
+              by staying in one of rustic cabins and cottages.</span
+            >
+          </li>
+          <li>
+            <span class="place_condo"
+              >Perfect for family trips, or couple’s vacations, you’ll find
+              condos feel like you’re away from home
+            </span>
+          </li>
+          <li>
+            <span class="place_resort"
+              >Resorts are conveniently situated near mountains, the beach, and
+              exciting towns, so wherever you’re staying</span
+            >
+          </li>
+          <li>
+            <span class="place_hotel"
+              >Situated near coveted amenities such as ski resorts, beach clubs,
+              hiking trails, and downtown areas perfect for wining and
+              dining</span
+            >
+          </li>
+          <li>
+            <span class="place_caravan"
+              >Explore the state’s many lakes, trails, and scenic views.</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="place_controls">
+      <span class="prev">prev</span>
+      <span class="next">next</span>
+    </p>
+    <!-- What To Do -->
+    <div class="WhatToDo">
+      <ul class="recreation">
+        <li></li>
+        <li>
+          <span
+            >From beginners to the most experienced experts, we have exciting
+            and fun options from hiking, biking, and ATVing to white water
+            rafting, kayaking, and canoeing</span
+          >
+        </li>
+        <li>
+          <button>discover</button>
+        </li>
+      </ul>
+      <ul class="scenicDrives">
+        <li></li>
+        <li>
+          <span
+            >They cut through the White Mountains, trace the most powerful
+            rivers,meander through timeless villages, Climb highest mountain
+            here</span
+          >
+        </li>
+        <li>
+          <button>discover</button>
+        </li>
+      </ul>
+      <ul class="attraction">
+        <li></li>
+        <li>
+          <span
+            >You will find a wide range of athletic prowess to enjoy, from
+            motorcycle races to minor-league baseball.</span
+          >
+        </li>
+        <li>
+          <button>discover</button>
+        </li>
+      </ul>
+      <ul class="artCulture">
+        <li></li>
+        <li>
+          <span
+            >Here is rugged beauty and independent spirit have inspired
+            painters, poets, sculptors, screenwriters, musicians, and thespians
+            for hundreds of years</span
+          >
+        </li>
+        <li>
+          <button>discover</button>
+        </li>
+      </ul>
+      <ul class="festivalActivity">
+        <li></li>
+        <li>
+          <span>- Search for events and things to do using our calendar</span>
+        </li>
+        <li></li>
+      </ul>
+      <ul class="food">
+        <li></li>
+        <li>
+          <span
+            >From casual drinks on an outside deck to fine dining. you’ll find
+            delicious local seafood, farm to table, and fresh batch beer and
+            wine throughout the state.</span
+          >
+        </li>
+        <li>
+          <button>discover</button>
+        </li>
+      </ul>
+    </div>
+    <!-- Popular Destination -->
+    <div>
+      <span class="reserve_destination"> Our Popular Destination </span>
+      <div>
+        <a href="#">
+          <img src="image/cottage2.webp" />
+          <ul class="reserve_detail">
+            <li>More than 50results</li>
+            <li>Cottage</li>
+          </ul>
+          <button>reserve</button>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="image/hotel2.jpg" />
+          <ul class="reserve_detail">
+            <li>France</li>
+            <li>More than 500results</li>
+          </ul>
+          <button>reserve</button>
+        </a>
+      </div>
+      <div>
+        <a href="#"></a>
+        <img src="image/condo2.webp" />
+        <ul class="reserve_detail">
+          <li>Condo</li>
+          <li>More than 5results</li>
+        </ul>
+        <button>reserve</button>
+      </div>
+    </div>
+    <!-- Client's Review -->
+    <div class="clientReview">
+      <div>
+        <a href="#"><img src="" alt="" /></a>
+        <ul class="review_details">
+          <li>cottage</li>
+          <li>2 persons</li>
+          <li>7days</li>
+        </ul>
+        <ul class="reviewAdress">
+          <li>Abakes Cottage</li>
+          <li>28333 Lake Shore Rd,, Gilford, France 344543</li>
+        </ul>
+      </div>
+      <div>
+        <a href="#"><img src="" alt="" /></a>
+        <ul class="review_details">
+          <li>hotel</li>
+          <li>4 persons</li>
+          <li>3days</li>
+        </ul>
+        <ul class="reviewAdress">
+          <li>Carroll & White Mountain Hotel</li>
+          <li>2301 Brown Ave., sumfort, VZ 22350</li>
+        </ul>
+      </div>
+      <div>
+        <a href="#"><img src="" alt="" /></a>
+        <ul class="review_details">
+          <li>hotel</li>
+          <li>2 persons</li>
+          <li>14days</li>
+        </ul>
+        <ul class="reviewAdress">
+          <li>Janmere Barn Hotel</li>
+          <li>Pinham Notrs Gorter, EG 24447</li>
+        </ul>
+      </div>
+      <button>see more</button>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer_logo">
+        <i class="material-icons">houseboat</i>
+        <span id="titleLogo">Camping</span>
+      </div>
+      <ul class="footer_categories">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Reserve</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer_search">
+        <input type="search" />
+        <button></button>
+      </div>
+    </div>
+  </body>
+</html>
