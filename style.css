@@ -90,18 +90,14 @@
   border-radius:  15px;
 }
 
-img {
-  width: 98vw;
-  height: 90vh;
-}
-
 /* First Image Slide */
 .imageSlide {
-  width: 98vw;
-  height: 80vh;
-  margin-bottom: 100px;
   position: relative;
   align-items: center;
+  overflow: hidden;
+  width: 96vw;
+  height: 86vh;
+  margin: 0px 20px 80px 20px;
 }
 
 .slide_text span {
@@ -127,7 +123,7 @@ img {
   font-size: 13px;
   width: 5vw;
   height: 4vh;
-  top: 70%;
+  top: 40%;
   transform: translate(910%, -50%);
   border-radius: 2px;
   border-style: none;
@@ -142,96 +138,18 @@ img {
   cursor: pointer;
 }
 
-.slides {
-  overflow: hidden;
-  height: 80vh;
-}
-
-.slides input {
-  display: none;
-}
-
-.slideImage {
+.main_slider {
   display: flex;
-  margin: 0px 20px;
+  height: auto;
 }
 
-.main_slide {
-  transition: 2s;
-  width: 20%;
-}
-
-.main_slide img {
-  width: 98vw;
-  height: 80vh;
-}
-/* Manual Navigation */
-.manualNav {
-  position: absolute;
-  width: 98vw;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manualBtn {
-  border: 1px solid rgba(255, 217, 98, 0.3);
-  padding: var(--padding-5);
-  border-radius: var(--padding-10);
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manualBtn:not(:last-child) {
-  margin-right: var(--padding-15);
-}
-
-.manualBtn:hover {
-  background: rgba(255, 217, 98, 0.8);
-}
-
-#radio1:checked ~ .slideFirst {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .slideFirst {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .slideFirst {
-  margin-left: -40%;
-}
-/* Automatic Navigation */
-.autoNav {
-  position: absolute;
-  display: flex;
-  width: 98vw;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.autoNav div {
-  border-radius: 1px solid rgba(255, 217, 98, 0.3);
-}
-
-.autoNav div:not(:last-child) {
-  margin-right: var(--padding-15);
-}
-
-#radio1:checked ~ .autoNav .autoBtn1 {
-  background: rgba(255, 217, 98, 0.8)
-}
-
-#radio2:checked ~ .autoNav .autoBtn2 {
-  background: rgba(255, 217, 98, 0.8)
-}
-
-#radio3:checked ~ .autoNav .autoBtn3 {
-  background: rgba(255, 217, 98, 0.8)
+.main_slider img {
+  width: 96vw;
+  height: 86vh;
 }
 
 /* Places To Stay In */
-.slide {
+.place_slide {
   margin: 10px 20px;
   width: 98vw;
   height: 56vh;
@@ -525,7 +443,7 @@ img {
 
 /* Review */
 .review {
-  margin: 100px;
+  margin: 100px;;
 }
 
 #reviewOfOurClients {
@@ -576,6 +494,10 @@ img {
   padding-right: var(--padding-15);
 }
 
+.review_button {
+  transform: translate(45%, 0%);
+}
+
 .review_button button {
   margin: auto var(--padding-10);
   width: 100px;
@@ -586,7 +508,8 @@ img {
   transition: all 0.5s ease 0s;
   background-color: rgba(238, 238, 238, 0.7);
   cursor: pointer;
-  display: block;;
+  display: block;
+  text-align: center;
 }
 
 .review_button button:hover {
