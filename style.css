@@ -338,6 +338,7 @@
   background-color: rgba(238, 238, 238, 0.7);
   border-block: border;
   height: 75vh;
+  width: 85.2vw;
   border-radius: 3px;
   padding: var(--padding-30);
   text-align: center;
