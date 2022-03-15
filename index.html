@@ -5,37 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discover Your Trip!</title>
+    <!--========================= CSS & JS =========================-->
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script defer src="main.js"></script>
+    <!--========================= FONTAWESOME =========================-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!--========================= GOOGLE FONTS =========================-->
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Noto+Serif:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navBar">
-      <div class="titleLogo">
+    <!--========================= Navigation =========================-->
+    <nav class="nav">
+      <div class="nav__logo">
         <i class="fas fa-campground"></i>
-        <p id="titleLogo">Camping</p>
+        <p class="nav__logo-text">Camping</p>
       </div>
-      <ul class="nav_menu">
+      <ul class="nav__menu">
         <li><a href="#">About</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Reserve</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <ul class="nav_icons">
+      <ul class="nav__icons">
         <li>
           <button>
-            <a href="#"><i class="material-icons">perm_identity</i></a>
+            <a href="#"><i class="material-icons account">perm_identity</i></a>
           </button>
         </li>
         <li>
@@ -45,118 +51,120 @@
         </li>
         <li>
           <button>
-            <a href="#"><i class="material-icons">language</i></a>
+            <a href="#"><i class="material-icons language">language</i></a>
           </button>
         </li>
       </ul>
     </nav>
-    <!-- First Image Slide -->
-    <section class="imageSlide">
-      <div class="slide_text">
-        <p id="discover">Discover Your Trip!</p>
-        <p id="notSure">Not sure where to go? Explore, reserve and camp</p>
+    <!--========================= HEADER =========================-->
+    <section class="header">
+      <div class="header__text">
+        <p id="header__text-discover">Discover Your Trip</p>
+        <p id="header__text-not">
+          Not sure where to go? Explore, reserve and camp!
+        </p>
         <button>Reserve</button>
       </div>
       <div class="main_slider">
-        <!-- Slide Images -->
+        <!--========================= HEADER SLIDE IMAGES =========================-->
         <img class="mainSlider_image" src="image/main1.jpg" alt="" />
         <img class="mainSlider_image" src="image/condo.jpg" alt="" />
         <img class="mainSlider_image" src="image/main3.jpg" alt="" />
       </div>
     </section>
-    <!-- Place To Stay In -->
-    <section class="place_to_stay">
-      <p id="placesToStay">Places to Stay in</p>
+    <!--========================= SECTION-A =========================-->
+    <section class="section-a">
+      <h1 class="section-a__title">Places to Stay in</h1>
       <div class="place_slide">
         <article>
-          <ul class="slide1">
+          <ul class="slide">
             <li>
               <a href="#"><img src="image/caravan.jpg" /></a>
             </li>
             <li class="title">Caravans</li>
             <li>
-              <p class="place_caravan"
-                >Roast marshmallows and make s’mores underneath a
+              <p class="place_caravan">
+                Roast marshmallows and make s’mores underneath a
                 constellation-filled sky, and wake up to the sounds of birds
-                chirping and trees rustling.</p
-              >
+                chirping and trees rustling.
+              </p>
             </li>
           </ul>
         </article>
         <article>
-          <ul class="slide2">
+          <ul class="slide">
             <li>
               <a href="#"><img src="image/cottage.jpg" /></a>
             </li>
             <li class="title">Cottages</li>
             <li>
-              <p class="place_cottage"
-                >You’ll be able to get back to basics in a more private atmosphere
-                by staying in one of rustic cabins and cottages.</p
-              >
+              <p class="place_cottage">
+                You’ll be able to get back to basics in a more private
+                atmosphere by staying in one of rustic cabins and cottages.
+              </p>
             </li>
           </ul>
         </article>
         <article>
-          <ul class="slide3">
+          <ul class="slide">
             <li>
               <a href="#"><img src="image/condo.jpg" /></a>
             </li>
             <li class="title">Condos</li>
             <li>
-              <p class="place_condo"
-                >Perfect for family trips, or couple’s vacations, you’ll find condos
-                feel <br />
+              <p class="place_condo">
+                Perfect for family trips, or couple’s vacations, you’ll find
+                condos feel <br />
                 you’re away from home
               </p>
             </li>
           </ul>
         </article>
         <article>
-          <ul class="slide4">
+          <ul class="slide">
             <li>
               <a href="#"><img src="image/resort.jpg" /></a>
             </li>
             <li class="title">Resorts</li>
             <li>
-              <p class="place_resort"
-                >Resorts are conveniently situated near mountains, the beach, and
-                exciting towns, so wherever you’re staying</p
-              >
+              <p class="place_resort">
+                Resorts are conveniently situated near mountains, the beach, and
+                exciting towns, so wherever you’re staying
+              </p>
             </li>
           </ul>
         </article>
         <article>
-          <ul class="slide5">
+          <ul class="slide">
             <li>
               <a href="#"><img src="image/tent.jpg" /></a>
             </li>
             <li class="title">Tents</li>
             <li>
-              <p class="place_tent"
-                >Roast marshmallows and make s’mores underneath a
+              <p class="place_tent">
+                Roast marshmallows and make s’mores underneath a
                 constellation-filled sky, and wake up to the sounds of birds
-                chirping and trees rustling.</p
-              >
+                chirping and trees rustling.
+              </p>
             </li>
           </ul>
         </article>
       </div>
     </section>
-    <!-- What To Do -->
-    <section class="WhatToDo">
-      <p id="whatToDo_title">Discover Activities to Do</p>
-      <div class="todo_firstLine">
+    <!--========================= SECTION-B =========================-->
+    <section class="section-b">
+      <h1 id="whatToDo_title">Discover Activities to Do</h1>
+      <div class="todo-container-first grid">
         <ul class="scenicDrives">
           <li>
             <a href="#"><img src="image/scenicDrives.jpg" /></a>
           </li>
           <li>
-            <p
-              >They cut through the White Mountains, trace the most powerful
+            <p>
+              They cut through the White Mountains, trace the most powerful
               rivers,meander through timeless villages, Climb highest mountain
-              here</p
-            >
+              here
+            </p>
           </li>
         </ul>
         <ul class="recreation">
@@ -164,34 +172,36 @@
             <a href="#"><img src="image/recreation.jpg" /></a>
           </li>
           <li>
-            <p
-              >We have exciting and fun options from hiking, biking, and ATVing
-              to white water rafting, kayaking, and canoeing</p
-            >
+            <p>
+              We have exciting and fun options from hiking, biking, and ATVing
+              to white water rafting, kayaking, and canoeing
+            </p>
           </li>
         </ul>
       </div>
-      <ul class="attraction">
-        <li>
-          <a href="#"><img src="image/attraction.jpg" /></a>
-        </li>
-        <li>
-          <p
-            >You will find a wide range of athletic prowess to enjoy, from
-            motorcycle races to minor-league baseball.</p
-          >
-        </li>
-      </ul>
-      <div class="todo_secondLine">
+      <div class="todo-container-second grid">
+        <ul class="attraction">
+          <li>
+            <a href="#"><img src="image/attraction.jpg" /></a>
+          </li>
+          <li>
+            <p>
+              You will find a wide range of athletic prowess to enjoy, from
+              motorcycle races to minor-league baseball.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="todo-container-third grid">
         <ul class="artCulture">
           <li>
             <a href="#"><img src="image/art.jpg" /></a>
           </li>
           <li>
-            <p
-              >Independent spirit have inspired painters, poets, sculptors,
-              screenwriters, musicians for hundreds of years</p
-            >
+            <p>
+              Independent spirit have inspired painters, poets, sculptors,
+              screenwriters, musicians for hundreds of years
+            </p>
           </li>
         </ul>
         <ul class="festivalActivity">
@@ -199,74 +209,74 @@
             <a href="#"><img src="image/festival.jpg" /></a>
           </li>
           <li>
-            <p
-              >Search and reserve our events and things to do using our
-              calendar</p
-            >
+            <p>
+              Search and reserve our events and things to do using our calendar
+            </p>
           </li>
         </ul>
       </div>
     </section>
-    <!-- Popular Destination -->
-    <section class="destination">
-      <p id="reserve_destination"> Our Popular Destinations </p>
-      <article class="destination_1">
-        <a href="#">
-          <img src="image/hotel2.jpg" />
-          <ul class="reserve_detail">
-            <li>France, more than <u>500 results</u></li>
-          </ul>
-          <button>reserve</button>
-        </a>
+    <!--========================= SECTION-C =========================-->
+    <section class="section-c">
+      <h1 id="destination__title">Our Popular Destinations</h1>
+      <article class="destination__box main">
+        <img src="image/hotel2.jpg" />
+        <div class="destination__box-text text-on-image">
+          <h3>France, more than <span>500 results</span></h3>
+          <a href="#"><button>See more</button></a>
+        </div>
       </article>
-      <article class="roundImage">
-        <div class="destination_2">
+      <article class="destination__box circle-image">
+        <div class="destination">
           <a href="#">
             <img src="image/cottage.jpg" />
-            <ul class="reserve_detail">
-              <li class="place">Cottage</li>
-              <li>More than 50 results</li>
-            </ul>
+            <div class="destination_text-detail">
+              <h3 class="place">Cottage</h3>
+              <p>More than <br /><span>50 results</span></p>
+            </div>
           </a>
         </div>
-        <div class="destination_3">
-          <a href="#"></a>
-          <img src="image/condo.jpg" />
-          <ul class="reserve_detail">
-            <li class="place">Condo</li>
-            <li>More than 5 results</li>
-          </ul>
+        <div class="destination">
+          <a href="#">
+            <img src="image/condo.jpg" />
+            <div class="destination_text-detail">
+              <h3 class="place">Condo</h3>
+              <p>More than <br /><span>5 results</span></p>
+            </div>
+          </a>
         </div>
-        <div class="destination_2">
+        <div class="destination">
           <a href="#">
             <img src="image/cottage.jpg" />
-            <ul class="reserve_detail">
-              <li class="place">Cottage</li>
-              <li>More than 50 results</li>
-            </ul>
+            <div class="destination_text-detail">
+              <h3 class="place">Cottage</h3>
+              <p>More than <br /><span>50 results</span></p>
+            </div>
           </a>
         </div>
-        <div class="destination_3">
-          <a href="#"></a>
-          <img src="image/condo.jpg" />
-          <ul class="reserve_detail">
-            <li class="place">Condo</li>
-            <li>More than 5 results</li>
-          </ul>
+        <div class="destination">
+          <a href="#">
+            <img src="image/condo.jpg" />
+            <div class="destination_text-detail">
+              <h3 class="place">Condo</h3>
+              <p>More than <br /><span>5 results</span></p>
+            </div>
+          </a>
         </div>
-        <div class="destination_3">
-          <a href="#"></a>
-          <img src="image/condo.jpg" />
-          <ul class="reserve_detail">
-            <li class="place">Condo</li>
-            <li>More than 5 results</li>
-          </ul>
+        <div class="destination">
+          <a href="#">
+            <img src="image/condo.jpg" />
+            <div class="destination_text-detail">
+              <h3 class="place">Condo</h3>
+              <p>More than <br /><span>5 results</span></p>
+            </div>
+          </a>
         </div>
       </article>
     </section>
-    <!-- Client's Review -->
-    <section class="review">
-      <p id="reviewOfOurClients">Reviews of Our Clients</p>
+    <!--========================= SECTION-D =========================-->
+    <section class="section-d">
+      <h1 id="reviewOfOurClients">Reviews of Our Clients</h1>
       <article class="review_client">
         <a href="#"><img src="image/profile.png" alt="" /></a>
         <div>
@@ -275,16 +285,24 @@
             <li><a href="#">2 persons</a></li>
             <li><a href="#">7days</a></li>
           </ul>
+        </div>
+        <div>
           <ul class="reviewAdress">
-            <li><b>Abakes Cottage</b></li>
-            <li>28333 Lake Shore Rd,, Gilford, France 344543</li>
-            <li>The rooms were clean, very comfortable, and the staff
-              was amazing. They went over and beyond to help make our
-              stay enjoyable. I highly recommend this hotel for anyone
-              visiting downtown.</li>
+            <li><a>Abakes Cottage</a></li>
+            <li class="adress">28333 Lake Shore Rd,, Gilford, France 344543</li>
+            <li>
+              The rooms were clean, very comfortable, and the staff was amazing.
+              They went over and beyond to help make our stay enjoyable. I
+              highly recommend this hotel for anyone visiting downtown.
+            </li>
+            <figure>
+              <img src="./image/condo.jpg" alt="" />
+              <img src="./image/scenicDrives.jpg" alt="" />
+            </figure>
           </ul>
         </div>
       </article>
+      <div class="seperate-line"></div>
       <article class="review_client">
         <a href="#"><img src="image/profile.png" alt="" /></a>
         <div>
@@ -293,17 +311,21 @@
             <li><a href="#">4 persons</a></li>
             <li><a href="#">3days</a></li>
           </ul>
+        </div>
+        <div>
           <ul class="reviewAdress">
-            <li><b>Carroll & White Mountain Hotel</b></li>
-            <li>2301 Brown Ave., sumfort, VZ 22350</li>
-            <li>They were extremely accommodating and allowed
-              us to check in early at like 10am. We got to hotel
-              super early and I didn’t wanna wait. So this was
-              a big plus. The sevice was exceptional as well.
-              Would definitely send a friend there.</li>
+            <li><a>Carroll & White Mountain Hotel</a></li>
+            <li class="adress">2301 Brown Ave., sumfort, VZ 22350</li>
+            <li>
+              They were extremely accommodating and allowed us to check in early
+              at like 10am. We got to hotel super early and I didn’t wanna wait.
+              So this was a big plus. The sevice was exceptional as well. Would
+              definitely send a friend there.
+            </li>
           </ul>
         </div>
       </article>
+      <div class="seperate-line"></div>
       <article class="review_client">
         <a href="#"><img src="image/profile.png" alt="" /></a>
         <div>
@@ -312,16 +334,21 @@
             <li><a href="#">2 persons</a></li>
             <li><a href="#">14days</a></li>
           </ul>
+        </div>
+        <div>
           <ul class="reviewAdress">
-            <li><b>Janmere Barn Hotel</b></li>
-            <li>Pinham Notrs Gorter, EG 24447</li>
-            <li>The best hotel I’ve ever been privileged
-              enough to stay at. Gorgeous building, and
-              it only gets more breathtaking when you walk
-              in. High quality rooms (there was even a tv
-              by the shower), and high quality service.
-              Also, they are one of few hotels that allow
-              people under 21 to book a reservation.</li>
+            <li><a>Janmere Barn Hotel</a></li>
+            <li class="adress">Pinham Notrs Gorter, EG 24447</li>
+            <li>
+              The best hotel I’ve ever been privileged enough to stay at.
+              Gorgeous building, and it only gets more breathtaking when you
+              walk in. High quality rooms (there was even a tv by the shower),
+              and high quality service. Also, they are one of few hotels that
+              allow people under 21 to book a reservation.
+            </li>
+            <figure>
+              <img src="./image/condo.jpg" alt="" />
+            </figure>
           </ul>
         </div>
       </article>
@@ -329,24 +356,26 @@
         <button>see more</button>
       </div>
     </section>
-    <!-- Footer -->
+    <!--========================= Footer =========================-->
     <footer class="footer">
-      <div class="footer_logo">
-        <i class="fas fa-campground"></i>
-        <p id="logo">Camping</p>
+      <section>
+        <article class="footer__logo">
+          <i class="fas fa-campground"></i>
+          <p id="logo">Camping</p>
+        </article>
+        <article class="footer__menu">
+          <ul class="footer__menu-categories">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Reserve</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </article>
+      </section>
+      <div class="searchBar">
+        <input id="search" type="search" width="13vw" />
+        <button>search</button>
       </div>
-      <div class="footer_search"></div>
-        <ul class="footer_categories">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Reserve</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="searchBar">
-          <input id="search" type="search"  width="13vw"/>
-          <button>search</button>
-        </div>
-      </footer>
-    </div>
+    </footer>
   </body>
 </html>

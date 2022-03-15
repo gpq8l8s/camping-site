@@ -1,0 +1,580 @@
+:root {
+  /* Color */
+  --light-yellow-color: rgb(255, 234, 100);
+  --yellow-color: rgb(255, 217, 98);
+  --deep-yellow-color: rgb(253, 199, 95);
+
+  /* Padding */
+  --padding-5: 5px;
+  --padding-10: 10px;
+  --padding-15: 15px;
+  --padding-30: 30px;
+  --padding-side: 60px;
+  --padding-between: 100px;
+
+  /* Font Size */
+  --font-title: 
+  --font-content: 
+  --font-micro:
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  color: #000;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--padding-side);
+  cursor: pointer;
+  padding: var(--padding-30) var(--padding-side);
+  /*width: 88vw; it's changed size if I put this but align-items doesn't work*/
+}
+
+.navBar .titleLogo{
+  align-items: center;
+  padding-right: var(--padding-5);
+  display: flex;
+}
+
+.navBar .titleLogo i {
+  font-size: 25px;
+}
+
+.navBar .titleLogo #titleLogo {
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+}
+
+.navBar .nav_menu,
+.navBar .nav_icons {
+  display: flex;
+}
+
+.navBar .nav_icons i {
+  font-size: 17px;
+}
+.navBar .nav_menu li {
+  padding-right: 50px;
+}
+
+.navBar .nav_icons li {
+  padding-right: var(--padding-5);
+  /*display: inline-block;*/
+}
+
+.navBar .nav_menu li a,
+.navBar .nav_icons li a {
+  transition: all 0.5s ease 0s;
+}
+.navBar .nav_menu li:hover {
+  color: var(--light-yellow-color);
+}
+
+
+.navBar .nav_icons button {
+  transition: all 0.5s ease 0s;
+  padding: 6px 17px;
+  border: none;
+  background-color: #fff;
+}
+
+.navBar .nav_icons button:hover {
+  background-color: var(--light-yellow-color);
+  border-radius:  15px;
+}
+
+/* First Image Slide */
+.imageSlide {
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  width: 96vw;
+  height: 86vh;
+  margin: 0px 20px 80px 20px;
+  padding: 0px var(--padding-side);
+}
+
+.slide_text p {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+}
+
+#discover {
+  transform: translate(-70%, -50%);
+  top: 25%;
+  font-size: 50px;
+}
+
+#notSure {
+  transform: translate(-68%, -25%);
+  font-size: 25px;
+  top: 30%;
+}
+
+.slide_text button {
+  font-size: 13px;
+  width: 5vw;
+  height: 4vh;
+  top: 40%;
+  transform: translate(830%, 90%);
+  border-radius: 2px;
+  border-style: none;
+  color: #000;
+  background-color: rgba(238, 238, 238, 0.7);
+  position: absolute;
+}
+
+.slide_text button:hover {
+  transition: all 0.5s ease 0s;
+  background: rgba(255, 217, 98, 0.8);
+  cursor: pointer;
+  color: #fff;
+}
+
+.main_slider {
+  display: flex;
+  height: auto;
+}
+
+.main_slider img {
+  width: 88vw;
+  height: 85vh;
+}
+
+/* Places To Stay In */
+#placesToStay {
+  padding-left: calc(var(--padding-10)*8);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.place_slide {
+  margin: 10px 20px;
+  width: 87.7vw;
+  height: 56vh;
+  display: flex;
+  border-block: border;
+  overflow: scroll;
+  padding-left: var(--padding-side);
+}
+
+.place_slide .title {
+  font-weight: 500;
+  padding-bottom: var(--padding-5);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  background: transition;
+}
+
+
+.slide1 img, .slide2 img, .slide3 img, .slide4 img, .slide5 img {
+  width: 35vw;
+  height: 40vh;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.slide1, .slide2, .slide3, .slide4, .slide5 {
+  text-align: flex-start;
+}
+
+/* What To Do Activities */
+.WhatToDo {
+  margin: var(--padding-between) var(--padding-side)  ;
+}
+
+.WhatToDo #whatToDo_title {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: var(--padding-10);
+}
+
+/*
+.WhatToDo img {
+  width: 50vw;
+  height: 40vh;
+  border-radius: 3px;
+}*/
+
+.todo_firstLine {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+
+.scenicDrives {
+  width: 42.5vw;
+  height: 58vh;
+  align-items: center;
+  padding: var(--padding-10);
+  text-align: center;
+  margin-right: var(--padding-10);
+  background-color: rgba(238, 238, 238, 0.7);
+  border-radius: 3px;
+}
+
+.scenicDrives img {
+  width: 42.5vw;
+  height: 50vh;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: 40% 70%;
+  padding-bottom: var(--padding-10);
+}
+
+.recreation {
+  text-align: center;
+  padding: var(--padding-10);
+  width: 42.5vw;
+  height: 58vh;
+  margin-left: var(--padding-10);
+  background-color: rgba(238, 238, 238, 0.7);
+  border-radius: 3px;
+}
+
+.recreation img {
+  width: 42.5vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 3px;
+  object-position: 60% 100%;
+  padding-bottom: var(--padding-10);
+}
+
+.attraction {
+  width: 87.7vw;
+  height: 40vh;
+  padding: var(--padding-10);
+  text-align: center;
+  margin-right: var(--padding-10);
+  background-color: rgba(238, 238, 238, 0.7);
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+
+.attraction img {
+  width: 87.7vw;
+  height: 35vh;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: 40% 70%;
+  padding-bottom: var(--padding-10);
+}
+
+.todo_secondLine {
+  display: flex;
+  margin-bottom: 130px;
+}
+
+.artCulture {
+  padding: 13px var(--padding-10);
+  text-align: center;
+  margin-right: var(--padding-10);
+  background-color: rgba(238, 238, 238, 0.7);
+  width: 42.5vw;
+  height: 67vh;
+  padding-right: var(--padding-10);
+  border-radius: 3px;
+}
+
+.artCulture img {
+  width: 42.5vw;
+  border-radius: 3px;
+  height: 60vh;
+  object-fit: cover;
+  object-position: 40% 70%;
+  padding-bottom: var(--padding-10);
+}
+
+.festivalActivity {
+  padding: 13px var(--padding-10);
+  text-align: center;
+  margin-right: var(--padding-10);
+  background-color: rgba(238, 238, 238, 0.7);
+  border-radius: 3px;
+  margin-left: var(--padding-10);
+  width: 42.5vw;
+  height: 67vh;
+}
+
+.festivalActivity img {
+  width: 42.5vw;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 3px;
+  object-position: 40% 70%;
+  padding-bottom: var(--padding-10);
+}
+
+/* Popular Destination */
+#reserve_destination {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: var(--padding-10);
+}
+
+.destination {
+  margin: var(--padding-side);
+}
+
+.reserve_detail {
+  padding: var(--padding-10) 0px;
+}
+
+.destination_1 {
+  background-color: rgba(238, 238, 238, 0.7);
+  border-block: border;
+  height: 75vh;
+  width: 85.2vw;
+  border-radius: 3px;
+  padding: var(--padding-30);
+  text-align: center;
+  justify-content: space-between;
+}
+
+.destination_1 img {
+  width: 70vw;
+  height: 65vh;
+  border-radius: 3px;
+}
+
+.destination img:hover {
+  cursor: pointer;
+}
+
+
+.destination_1 button {
+  margin-top: var(--padding-10);
+  font-size: 13px;
+  border-style: none;
+  padding: var(--padding-5) var(--padding-15);
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  width: 76px;
+}
+
+.destination_1 button:hover {
+  background-color: rgba(255, 217, 98, 0.8);
+}
+
+.roundImage {
+  display: flex;
+  margin: 0px 40px;
+  justify-content: space-between;
+}
+
+.destination_1, .roundImage {
+  text-align: center;
+}
+
+.destination_2 img, .destination_3 img {
+  width: 13vw;
+  height: 24vh;
+  object-fit: cover;
+  object-position: 20% 100%;
+  border-radius: 200px;
+}
+
+.destination_2, .destination_3 {
+  padding-top: 50px ;
+  text-align: center;
+  padding-right: 45px;
+}
+
+.destination .roundImage div {
+  align-items: center;
+}
+
+.destination .roundImage .place {
+  font-weight: 500;
+}
+/*
+.destination_2 button, .destination_3 button {
+  margin-top: var(--padding-10);
+  font-size: 13px;
+  border-style: none;
+  width: 80px;
+  padding: var(--padding-5) var(--padding-15);
+  border-radius: 3px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(238, 238, 238, 0.7);
+  cursor: pointer;
+}
+
+.destination_2 button:hover, .destination_3 button:hover {
+  background-color: rgba(255, 217, 98, 0.8);
+  cursor: pointer;
+} */
+
+
+/* Review */
+.review {
+  margin: 100px;;
+}
+
+#reviewOfOurClients {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 13px
+}
+
+.review_client {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-block: border;
+  background-color: transparent;
+}
+
+.review_client:hover{
+  cursor: pointer;
+}
+
+.review img {
+  width: 4vw;
+  height: 8vh;
+  object-fit: cover;
+  object-position: 10% 10%;
+  border-radius: 500px;
+  padding-right: 20px;
+}
+
+.review_details {
+  display: flex;
+  padding-bottom: var(--padding-5);
+}
+
+.review_details li {
+  padding-right: var(--padding-15);
+  font-size: 12px;
+}
+
+
+.reviewAdress {
+  display: flex;
+  padding-bottom: var(--padding-15);
+}
+
+.reviewAdress li {
+  padding-right: var(--padding-15);
+}
+
+.review_button {
+  transform: translate(45%, 0%);
+}
+
+.review_button button {
+  margin: auto var(--padding-10);
+  width: 90px;
+  font-size: 13px;
+  border-style: none;
+  padding: var(--padding-5) var(--padding-15);
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(238, 238, 238, 0.7);
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+.review_button button:hover {
+  background-color: rgba(255, 217, 98, 0.8);
+}
+
+/* Footer */
+.footer {
+  border-block: border;
+  background-color: rgb(48, 48, 48);
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer_logo i {
+  padding-right: var(--padding-5);
+}
+
+.footer_logo i, .footer_categories li>a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.footer_logo {
+  display: flex;
+  font-family: 'Noto Serif', serif;
+}
+
+.footer_logo, .footer_categories, .searchBar {
+  margin: 30px 20px;
+}
+
+#logo {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+}
+
+.material-icons:hover {
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  cursor: pointer;
+}
+
+#logo:hover {
+  /*transition: all 0.5s ease 0s;
+  color: rgba(255, 217, 98, 0.8);*/
+  cursor: pointer;
+}
+
+.footer_categories {
+  display: flex;
+  transition: all 0.5s ease 0s;
+}
+
+.footer_categories li>a:hover {
+  /*color: rgba(255, 217, 98, 0.8);*/
+  cursor: pointer;
+}
+
+.footer_categories li {
+  padding-right: 20px;
+}
+
+
+
+.searchBar button {
+  background-color: rgb(255, 217, 98);
+  border-radius: 3px;
+  border-style: none;
+  font-size: 10px;
+  padding: 3px;
+}
+
+.searchBar input #search {
+  cursor: text;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 635px){
+  
+}

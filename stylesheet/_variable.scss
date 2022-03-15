@@ -1,0 +1,26 @@
+/*========= font & typogaraphy =========*/
+$font-body: 'Barlow', sans-serif;
+$font-logo: 'Noto Serif', serif;
+$font-title: 1.3rem;
+$font-general: 1rem;
+$font-small: 0.8rem;
+$font-micro: 0.6rem;
+
+/*========= color =========*/
+$color-bright-grey: #eaeaea;
+$color-grey: rgb(167, 167, 167);
+$color-bg-button: rgba(255, 255, 255, 0.7);
+$color-text-button: rgba(36, 36, 36, 0.8);
+
+/*========= margin =========*/
+$margin-side: 1rem;
+$margin-upper: 0.5rem;
+
+/*========= margin =========*/
+@mixin button-hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  border: 0.5px solid #fff;
+}
