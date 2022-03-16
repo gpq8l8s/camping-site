@@ -1,3 +1,4 @@
+@fa-font-path : '../font';
 /*========= font & typogaraphy =========*/
 /*========= color =========*/
 /*========= margin =========*/
@@ -136,6 +137,12 @@ footer {
   overflow: scroll;
   width: 100%;
   height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.section-a .place_slide::-webkit-scrollbar {
+  display: none;
 }
 
 .section-a .place_slide ul {
@@ -159,10 +166,6 @@ footer {
 /*================= Section-b =================*/
 .section-b {
   margin: 2rem 1rem;
-}
-
-.section-b .grid .scenicDrives {
-  margin: 0 0;
 }
 
 .section-b .grid ul {
@@ -426,6 +429,27 @@ footer {
   .section-c,
   .section-d {
     margin: 2rem 8rem;
+  }
+  .header .main_slider img {
+    height: 28rem;
+  }
+  .section-a .place_slide ul li img {
+    height: 17rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-b .todo-container-first,
+  .section-b .todo-container-third {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(35rem, auto))[2];
+        grid-template-columns: repeat(2, minmax(35rem, auto));
+    grid-gap: 1rem;
+  }
+  .section-b .todo-container-second .attraction li img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

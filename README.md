@@ -10,6 +10,12 @@
 
 ### Used funtions / Effects
 
-- Carousel
-- Transform / left on header
-- Overflow to control whitespace on the browser ect.
+- **Carousel**
+- **Transform / left** on header
+- **Overflow** to control whitespace on the browser ect.
+- **Hide ScollBar**
+  <span style="color:grey">(IE, FireFox)</span>
+  -ms-overflow-style : none;
+  scrollbar-width : none;
+  <span style="color:grey">(Safari)</span>
+  ::-webkit-scrollbar {display:none;}
